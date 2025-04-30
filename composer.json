@@ -23,7 +23,7 @@
         "php": ">=7.4",
         "almasaeed2010/adminlte": "^4.0@beta",
         "yiisoft/yii2": "^2.0.50",
-        "yiisoft/yii2-bootstrap5": "^2.0.42"
+        "yiisoft/yii2-bootstrap5": "^2.0.50"
     },
     "config": {
         "allow-plugins": {
