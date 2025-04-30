@@ -1,0 +1,44 @@
+{
+    "name": "id161836712/yii2-adminlte4",
+    "homepage": "https://github.com/leonidkim01/yii2-adminlte4",
+    "keywords": [
+        "yii2",
+        "adminlte"
+    ],
+    "type": "yii2-extension",
+    "license": "BSD-2-Clause",
+    "authors": [
+        {
+            "name": "Leonid Kim",
+            "email": "kiml@list.ru",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/id161836712/yii2-adminlte4/issues",
+        "source": "https://github.com/id161836712/yii2-adminlte4"
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7.4",
+        "almasaeed2010/adminlte": "^4.0@beta",
+        "yiisoft/yii2": "^2.0.50",
+        "yiisoft/yii2-bootstrap5": "^2.0.42"
+    },
+    "config": {
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "id161836712\\adminlte4\\": "src"
+        }
+    }
+}
