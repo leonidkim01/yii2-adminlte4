@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace ourleu\adminlte4;
+namespace id161836712\adminlte4;
 
 use yii\bootstrap5\Widget;
 use yii\helpers\Html;
@@ -46,7 +46,7 @@ final class SmallBox extends Widget
      */
     public function run(): string
     {
-        $html = $this->renderInner() . "\n" . $this->renderIcon() . "\n" . $this->renderFooter();
+        $html = "\n" . $this->renderInner() . "\n" . $this->renderIcon() . "\n" . $this->renderFooter() . "\n";
 
         Html::addCssClass($this->options, ['widget' => 'small-box']);
 
@@ -60,7 +60,7 @@ final class SmallBox extends Widget
 
         Html::addCssClass($this->innerOptions, ['widget' => 'inner']);
 
-        return Html::tag('div', $title . "\n" . $text, $this->innerOptions);
+        return Html::tag('div', $title . $text, $this->innerOptions);
     }
 
     private function renderIcon(): ?string
@@ -73,7 +73,7 @@ final class SmallBox extends Widget
 
         Html::addCssClass($this->iconOptions, ['widget' => 'small-box-icon']);
 
-        return Html::tag('div', $html, ['class' => $this->iconOptions]);
+        return Html::tag('div', $html, $this->iconOptions);
     }
 
     private function renderFooter(): string

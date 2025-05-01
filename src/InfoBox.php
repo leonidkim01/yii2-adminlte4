@@ -7,7 +7,6 @@ namespace id161836712\adminlte4;
 use yii\bootstrap5\Widget;
 use yii\helpers\Html;
 
-use function is_numeric;
 use function is_string;
 
 /**
@@ -52,7 +51,7 @@ final class InfoBox extends Widget
      */
     public function run(): string
     {
-        $html = $this->renderIcon() . "\n" . $this->renderContent();
+        $html = "\n" . $this->renderIcon() . "\n" . $this->renderContent() . "\n";
 
         Html::addCssClass($this->options, ['widget' => 'info-box']);
 
@@ -69,7 +68,7 @@ final class InfoBox extends Widget
 
         Html::addCssClass($this->iconOptions, ['widget' => 'info-box-icon']);
 
-        return Html::tag('span', $html, ['class' => $this->iconOptions]);
+        return Html::tag('span', $html, $this->iconOptions);
     }
 
     private function renderContent(): ?string
@@ -80,17 +79,17 @@ final class InfoBox extends Widget
 
         Html::addCssClass($this->contentOptions, ['widget' => 'info-box-content']);
 
-        return Html::tag('div', $text . "\n" . $number . "\n" . $progress, ['class' => $this->contentOptions]);
+        return Html::tag('div', $text . "\n" . $number . "\n" . $progress, $this->contentOptions);
     }
 
     private function renderProgress(): ?string
     {
-        if ($this->progress && isset($this->progress['width']) && is_numeric($this->progress['width'])) {
+        if ($this->progress && isset($this->progress['width']) && $this->progress['width']) {
             Html::addCssClass($this->progressOptions, ['widget' => 'progress']);
             Html::addCssClass($this->progressBarOptions, ['widget' => 'progress-bar']);
             Html::addCssStyle($this->progressBarOptions, ['width' => $this->progress['width']]);
 
-            $progressBar = Html::tag('div', Html::tag('div', '', $this->progressBarOptions), ['class' => $this->progressOptions]);
+            $progressBar = Html::tag('div', Html::tag('div', '', $this->progressBarOptions), $this->progressOptions);
 
             if (isset($this->progress['description']) && is_string($this->progress['description'])) {
                 Html::addCssClass($this->progressDescriptionOptions, ['widget' => 'progress-description']);

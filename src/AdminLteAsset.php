@@ -14,18 +14,22 @@ final class AdminLteAsset extends AssetBundle
      * @inheritdoc
      */
     public $sourcePath = '@vendor/almasaeed2010/adminlte/dist';
+
     /**
      * @inheritdoc
      */
     public $css = [
         YII_ENV_DEV ? 'css/adminlte.css' : 'css/adminlte.min.css',
+
     ];
+
     /**
      * @inheritdoc
      */
     public $js = [
         YII_ENV_DEV ? 'js/adminlte.js' : 'js/adminlte.min.js',
     ];
+
     /**
      * @inheritdoc
      */
