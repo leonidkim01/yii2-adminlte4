@@ -4,7 +4,7 @@ namespace id161836712\tests\adminlte4;
 
 use id161836712\adminlte4\SmallBox;
 
-class SmallBoxTest extends TestCase
+final class SmallBoxTest extends TestCase
 {
     public function testRender(): void
     {

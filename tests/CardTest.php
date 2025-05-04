@@ -4,7 +4,7 @@ namespace id161836712\tests\adminlte4;
 
 use id161836712\adminlte4\Card;
 
-class CardTest extends TestCase
+final class CardTest extends TestCase
 {
     public function testRender(): void
     {

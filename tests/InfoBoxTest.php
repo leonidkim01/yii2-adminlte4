@@ -4,7 +4,7 @@ namespace id161836712\tests\adminlte4;
 
 use id161836712\adminlte4\InfoBox;
 
-class InfoBoxTest extends TestCase
+final class InfoBoxTest extends TestCase
 {
     public function testRender(): void
     {

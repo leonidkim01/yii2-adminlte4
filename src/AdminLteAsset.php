@@ -20,7 +20,6 @@ final class AdminLteAsset extends AssetBundle
      */
     public $css = [
         YII_ENV_DEV ? 'css/adminlte.css' : 'css/adminlte.min.css',
-
     ];
 
     /**
