@@ -21,7 +21,7 @@
     "minimum-stability": "stable",
     "require": {
         "php": ">=7.4",
-        "almasaeed2010/adminlte": "^4.0@beta",
+        "almasaeed2010/adminlte": "^4.0@rc",
         "yiisoft/yii2": "^2.0.50",
         "yiisoft/yii2-bootstrap5": "^2.0.50"
     },

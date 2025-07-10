@@ -8,6 +8,9 @@ use yii\bootstrap5\BootstrapAsset;
 use yii\bootstrap5\BootstrapPluginAsset;
 use yii\web\AssetBundle;
 
+/**
+ * @inheritdoc
+ */
 final class AdminLteAsset extends AssetBundle
 {
     /**
